@@ -1,0 +1,15 @@
+{
+  "name": "eindopdracht-webdevelopment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": { "start": "parcel src/index.html", "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Linda van Mierlo",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
