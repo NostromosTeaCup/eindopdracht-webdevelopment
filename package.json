@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "scripts": { "start": "parcel src/index.html", "build": "parcel build src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Linda van Mierlo",
   "license": "ISC",
   "devDependencies": {
+    "buffer": "^6.0.3",
     "parcel": "^2.7.0",
-    "parcel-plugin-nuke-dist": "^1.0.1"
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }

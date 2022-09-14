@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <script src="main.js" type="module" defer></script>
     <title>The Clueless Cook</title>
 </head>
 
@@ -45,14 +46,14 @@
 
 <main class="outer-container">
 
-    <div class="main__search inner-container">
-        <div class="search__request">
-            <label for="search-field">
-                <input type="search" name="search-field" id="search-field" placeholder="Recipe Search"/>
+    <div class="main__search inner-container" id="search-field">
+            <form class="search__request" id="onSubmit">
+            <label for="ingredients">
+                <input type="search" name="search-field" id="ingredients" placeholder="Recipe Search"/>
             </label>
 
-            <label for="meal-type">
-                <select name="meal-type" id="meal-type">
+            <label for="mealType">
+                <select name="meal-type" id="mealType">
                     <option value="" disabled selected>Meal type</option>
                     <option value="breakfast">Breakfast</option>
                     <option value="brunch">Brunch</option>
@@ -119,12 +120,13 @@
                 </select>
             </label>
 
-            <button type="submit" id="recipe-search-button">search</button>
-        </div>
+            <button type="submit">search</button>
+</form>
     </div>
 
     <div class="inner-container">
-        <ul id="main__recipes-results-list"></ul>
+        <ul id="recipeCardsList"></ul>
+        <span id="error-message"></span>
     </div>
 
 </main>
@@ -175,7 +177,5 @@
     </div>
 
 </footer>
-
-<script type="module" src="main.js"></script>
 </body>
 </html>
