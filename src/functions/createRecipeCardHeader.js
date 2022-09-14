@@ -9,9 +9,9 @@ export default function createFeaturedRecipeCard(recipeArray) {
     recipeArray.map((item) => {
         //making the cards for the recipes
         recipeList.innerHTML += `
-    <li class="recipe-cards__result-item">
-    <img class="recipe-cards__result-image" src="${item.recipe.image}" alt="${item.recipe.label}">
-    <div class="recipe-card__result">
+    <li class="featured-recipe-cards__result-item">
+    <img class="featured-recipe-cards__result-image" src="${item.recipe.image}" alt="${item.recipe.label}">
+    <div class="featured-recipe-card__result">
     <p class="recipe-label">${item.recipe.label}</p>
     <div class="recipe-cards__text">
     <p><strong>${Math.round(item.recipe.calories)}</strong> Calories | <strong>${item.recipe.ingredientLines.length} </strong> Ingredients</p>

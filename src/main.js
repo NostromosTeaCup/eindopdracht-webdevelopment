@@ -27,4 +27,4 @@ submitForm.addEventListener('submit', (e) => {
     }
 );
 
-fetchFeaturedRecipeData('mashed potatoes')
+fetchFeaturedRecipeData('chinese')
