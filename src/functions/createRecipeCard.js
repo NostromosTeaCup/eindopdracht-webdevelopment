@@ -7,9 +7,12 @@ export default function createRecipeCard(recipeArray) {
 
 
     recipeArray.map((item) => {
+        //make variable for recipe link to recipe-page.html
+        const id = item.recipe.uri.split('_')[1];
         //making the cards for the recipes
         recipeList.innerHTML += `
     <li class="recipe-cards__result-item">
+        <a href="/recipe-page.html?id=${id}" target="_blank">
     <img class="recipe-cards__result-image" src="${item.recipe.image}" alt="${item.recipe.label}">
     <div class="recipe-card__result">
     <p class="recipe-label">${item.recipe.label}</p>
@@ -18,7 +21,8 @@ export default function createRecipeCard(recipeArray) {
     <p><img class="time-icon" src="${timeImage.src}" alt="Time Icon">
     <strong>${item.recipe.totalTime}</strong> min.</p>
 </div>
- </div></li>
+ </div>
+ </a></li>
     `
     })
 }

@@ -2,72 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="./assets/fonts/fonts.css">
-  <title>The Clueless Cook - Recipe Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <title id="recipePageBrowserTab">The Clueless Cook - Recipe Page</title>
+<!--    <script src="functions/fetchRecipePage.js" type="module" defer></script>-->
 </head>
 <body class="outer-container__body">
 
 <header class="outer-container">
 
-  <div class="outer-container__navigation">
-    <nav class="navigation__wrapper inner-container">
-      <h2><a href="index.html">The Clueless Cook</a></h2>
-      <ul class="navigation__list">
-        <li><a href="index.html">home</a></li>
-        <li><a href="#footer">about</a></li>
-        <li><a href="calculator.html">calculator</a></li>
-      </ul>
-    </nav>
-  </div>
-
-</header>
-  <footer class="outer-container" id="footer">
-
-    <div class="footer__container inner-container">
-      <ul class="footer__list">
-        <li>
-          <h5>information</h5>
-          <p>Nullam a enim</p>
-          <p>Quisque cursus</p>
-          <p>Cras egestas</p>
-          <p>Nunc vitae</p>
-        </li>
-        <li>
-          <h5>about</h5>
-          <p>Nullam a enim</p>
-          <p>Quisque cursus</p>
-          <p>Cras egestas</p>
-          <p>Nunc vitae</p>
-        </li>
-        <li>
-          <h5>contact</h5>
-          <p>Nullam a enim</p>
-          <p>Quisque cursus</p>
-          <p>Cras egestas</p>
-          <p>Nunc vitae</p>
-        </li>
-
-        <li>
-          <h5>Social</h5>
-          <div class="footer__social-card">
-            <a href="#"><img class="social__icons" src="assets/icons/facebook.png" alt="facebook icon">
-            </a>
-            <a href="#"><img class="social__icons" src="assets/icons/instagram.png" alt="instagram icon">
-            </a>
-            <a href="#"><img class="social__icons" src="assets/icons/linkedin.png" alt="linkedin icon">
-            </a>
-            <a href="#"><img class="social__icons" src="assets/icons/twitter.png" alt="twitter icon">
-            </a>
-
-          </div>
-
-        </li>
-      </ul>
+    <div class="outer-container__navigation">
+        <nav class="navigation__wrapper inner-container">
+            <h2><a href="index.html">The Clueless Cook</a></h2>
+            <ul class="navigation__list">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#footer">about</a></li>
+                <li><a href="calculator.html">calculator</a></li>
+            </ul>
+        </nav>
     </div>
 
-  </footer>
+</header>
+
+<main class="outer-container">
+    <div class="inner-container">
+        <div class="recipe-page__wrapper">
+            <!--      title-->
+            <div id="recipeTitleCard" class="recipe-page__card">
+            </div>
+<!--            <span id="errorMessage">-->
+<span id="error-message"></span>
+<!--            </span>-->
+            <!--      image-->
+            <div id="recipeImage" class="recipe-page__card">
+      </div>
+            <!--ingredients-->
+            <div id="recipeIngredientsCard" class="recipe-page__card">
+                <h4>Ingredients</h4>
+                <ul id="ingredientsList">
+
+                </ul>
+            </div>
+            <!--      nutrients-->
+            <div id="recipeNutrientsCard" class="recipe-page__card">
+                <h4>Nutrients</h4>
+                <table class="recipe-page__nutrients-results">
+                    <thead class="nutrients-results__head">
+                    <tr>
+                        <th>Energy</th>
+                    </tr>
+                    <tr>
+                        <th>Fat</th>
+                    </tr>
+                    <tr>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <th>Sugar</th>
+                    </tr>
+                    <tr>
+                        <th>Protein</th>
+                    </tr>
+                    <tr>
+                        <th>Sodium</th>
+                    </tr>
+                    </thead>
+                    <tbody id="nutrientsResults" class="nutrients-results__body">
+<!--                    loading in nutrient results through JS-->
+                    </tbody>
+                </table>
+            </div>
+            <div id="recipeHealthLabels" class="recipe-page__card">
+                <h4>health labels</h4>
+                <ul id="recipeHealthLabelList">
+<!--                    loading health labels from JS-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
 
 
+<footer class="outer-container" id="footer">
+
+    <div class="footer__container inner-container">
+        <ul class="footer__list">
+            <li>
+                <h5>information</h5>
+                <p>Nullam a enim</p>
+                <p>Quisque cursus</p>
+                <p>Cras egestas</p>
+                <p>Nunc vitae</p>
+            </li>
+            <li>
+                <h5>about</h5>
+                <p>Nullam a enim</p>
+                <p>Quisque cursus</p>
+                <p>Cras egestas</p>
+                <p>Nunc vitae</p>
+            </li>
+            <li>
+                <h5>contact</h5>
+                <p>Nullam a enim</p>
+                <p>Quisque cursus</p>
+                <p>Cras egestas</p>
+                <p>Nunc vitae</p>
+            </li>
+
+            <li>
+                <h5>Social</h5>
+                <div class="footer__social-card">
+                    <a href="#"><img class="social__icons" src="assets/icons/facebook.png" alt="facebook icon">
+                    </a>
+                    <a href="#"><img class="social__icons" src="assets/icons/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="#"><img class="social__icons" src="assets/icons/linkedin.png" alt="linkedin icon">
+                    </a>
+                    <a href="#"><img class="social__icons" src="assets/icons/twitter.png" alt="twitter icon">
+                    </a>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+</footer>
+
+<script src="functions/fetchRecipePage.js" type="module"></script>
 </body>
 </html>
