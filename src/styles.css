@@ -79,11 +79,11 @@ li > p {
 
 
 
-li {
-    list-style-type: none;
-}
+/*li {*/
+/*    list-style-type: none;*/
+/*}*/
 
-li a {
+a {
     text-decoration: none;
 }
 
@@ -176,6 +176,7 @@ button::after {
     gap: 35px;
     height: 50px;
     margin-right: var(--main-margin-left-right);
+    list-style-type: none;
 }
 
 .navigation__list a {
@@ -322,9 +323,6 @@ button::after {
 }
 
 
-
-/* --------------- 4.3.2 Main - Recipe Page ---------------------- */
-
 .recipe-cards__result-item {
     display: flex;
     flex-direction: column;
@@ -379,6 +377,98 @@ button::after {
     display: flex;
 }
 
+
+/* --------------- 4.3.2 Main - Recipe Page ---------------------- */
+
+.recipe-page__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recipe-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-page__card {
+    margin-top: 30px;
+    color: var(--cc-main-color-dark);
+}
+
+.ingredient-list {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    font-size: 24px;
+}
+
+.ingredient-list li > span {
+    font-size: 14px;
+}
+
+.recipe-page__time-icon {
+    height: 20px;
+}
+
+.recipe-page__image {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.nutrients__card {
+    width: 300px;
+}
+
+.recipe-page__nutrients-results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrients-results__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.nutrients-results__head th {
+    font-weight: 500;
+}
+
+.health-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--cc-main-color-dark);
+    background-color: var(--cc-contrast);
+    padding-right: 10px;
+    padding-left: 10px;
+    width: fit-content;
+    height: 28px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.text-container-end {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recipe-health__labels {
+    width: 350px;
+}
+
 /*---------------- 4.2.3 Main - Calculator Page ------- */
 
 
@@ -398,6 +488,7 @@ button::after {
     justify-content: space-evenly;
     align-items: flex-start;
     width: var(--inner-container-width);
+    list-style-type: none;
 }
 
 .footer__list li p {

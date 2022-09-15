@@ -14,13 +14,13 @@ export const createRecipeTitle = (selectedRecipe) => {
     const recipeTitleCard = document.getElementById("recipeTitleCard");
     const recipeTitle = selectedRecipe.label;
     const timeIcon = new Image();
-    timeIcon.src = require("/src/assets/icons/time.png");
+    timeIcon.src = require("../assets/icons/time.png");
     const cookingTime = selectedRecipe.totalTime;
 
     recipeTitleCard.innerHTML += `
     <div class="recipe-title">
     <h3>${recipeTitle}</h3>
-    <p><img class="recipe-page__time-icon" src="${timeIcon}" alt="Time Icon">${cookingTime} min.</p>
+    <p><img class="recipe-page__time-icon" src="${timeIcon.src}" alt="Time Icon"> ${cookingTime} min.</p>
     </div>
     `;
 }
@@ -43,7 +43,7 @@ export const createRecipeIngredientsList = (selectedRecipe) => {
         const recipeIngredientList = document.getElementById("ingredientsList");
 
         recipeIngredientList.innerHTML += `
-        <li>${ingredient}</li>
+        <li><span>${ingredient}</span></li>
         `;
     })
 }
