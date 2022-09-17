@@ -22,17 +22,21 @@
   </div>
 </header>
 
-<section class="outer-container">
+<main class="outer-container">
   <div class="inner-container">
-    <div class="wrapper-container">
-    <h3>calorie calculator</h3>
-    <form>
-      <label for="productField">
-        <input type="text" name="productField" id="productField" placeholder="barcode/product">
-      </label>
-      <button type="submit">search</button>
-    </form>
     <div>
+      <h3>Calorie Calculator</h3>
+    </div>
+    <div>
+      <form id="calculatorSubmit">
+        <label for="searchQueryCalculator">
+          <input type="text" name="searchQueryCalculator" id="searchQueryCalculator" placeholder="Product">
+        </label>
+        <button type="submit">search</button>
+      </form>
+    </div>
+    <div>
+
       <table>
         <thead>
         <tr>
@@ -42,36 +46,43 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-
+        <tr id="createProductCalorie">
         </tr>
         </tbody>
       </table>
-      <div>
-        <table>
-          <thead>
-          <tr>
-            <th>product</th>
-            <th>calories</th>
-            <th>fat</th>
-            <th>carbs</th>
-          </tr>
-          </thead>
-          
-          <tbody>
-          <tr>
-            <td>Total</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
+    <div>
+      <form id="calculatorAddAmount">
+        <label for="createAmountInput">
+          <input type="text" name="createAmountInput"
+                 id="createAmountInput" placeholder="Amount">
+          serving(s)
+        </label>
+        <button type="submit" class="calculator__add-button">add</button>
+      </form>
+    </div>
+    <div>
+      <table id="calculatorAddedCalorieData">
+        <thead>
+        <tr class="calculator-data__heading">
+          <th>product</th>
+          <th>calories</th>
+          <th>fat</th>
+          <th>carbs</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="calculator-fetched-data">
+          <td>total</td>
+          <td id="calculator__total-of-calories"></td>
+          <td id="calculator__total-of-fat"></td>
+          <td id="calculator__total-of-carbs"></td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-</section>
+</main>
 
   <footer class="outer-container" id="footer">
 
@@ -119,6 +130,6 @@
 
   </footer>
 
-
+<script src="calculator.js" type="module"></script>
 </body>
 </html>
