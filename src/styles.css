@@ -134,17 +134,18 @@ button {
     font-weight: 600;
     color: var(--cc-main-color-dark);
     background-color: var(--cc-contrast);
-    border-style: none;
+    border: 1px solid var(--cc-main-color-dark);
     border-radius: 4px;
     box-shadow: 0 1px 12px 1px rgba(0, 0, 0, 0.09), inset 0 0 8px 0 rgba(0, 0, 0, 0.11);
     cursor: pointer;
 }
 
-button::after {
-    content: "➔";
-    display: inline-block;
-    padding-left: 20px;
+.arrow-sign {
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 8px;
 }
+
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -470,6 +471,97 @@ button::after {
 }
 
 /*---------------- 4.2.3 Main - Calculator Page ------- */
+
+.calculator__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.calculator__inner-container {
+    width: calc(100% * 1 / 2);
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__search-query,
+.calculator__amount-input {
+    width: 200px;
+    height: 32px;
+    text-align: start;
+    padding-left: 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: var(--cc-main-color-dark);
+}
+
+.calculator__amount-input::after {
+    content: "serving(s)";
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.calculator__searchform-flex,
+.calculator__amountform-flex {
+    padding: 30px 100px 10px 2px;
+
+}
+
+.calculator__amount-input-field {
+    width: 100px;
+    margin-right: 20px;
+
+}
+
+#searchQueryCalculator {
+    margin-right: 30px;
+}
+
+#searchQueryCalculator,
+#createAmountInput {
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.plus-sign {
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 8px;
+}
+
+.calculator__add-button {
+    width:80px;
+}
+
+.calculator__amount-results {
+    width: 100%;
+    font-size: 14px;
+}
+
+.calculator-data__heading {
+    font-size: 14px;
+    color: var(--cc-main-color-dark);
+}
+
+.calculator-data__heading th {
+    text-transform: capitalize;
+}
+
+.calculator-data__heading th {
+    text-align: left;
+    width: calc(100% * (1 / 4));
+    border: 1px solid red;
+    padding-right: 25px;
+}
+
+.calculator-data__heading tr {
+    font-size: 12px;
+}
 
 
 

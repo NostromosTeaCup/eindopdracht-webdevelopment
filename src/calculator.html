@@ -23,16 +23,15 @@
 </header>
 
 <main class="outer-container">
-  <div class="inner-container">
-    <div>
+  <div class="inner-container calculator__wrapper">
+    <div class="calculator__inner-container">
       <h3>Calorie Calculator</h3>
-    </div>
     <div>
-      <form id="calculatorSubmit">
-        <label for="searchQueryCalculator">
+      <form id="calculatorSubmit" class="calculator__searchform-flex">
+        <label for="searchQueryCalculator" class="calculator__search-query">
           <input type="text" name="searchQueryCalculator" id="searchQueryCalculator" placeholder="Product">
         </label>
-        <button type="submit">search</button>
+        <button type="submit" class="calculator__searchbtn">search <span class="arrow-sign">➔</span></button>
       </form>
     </div>
     <div>
@@ -52,18 +51,17 @@
       </table>
     </div>
     <div>
-      <form id="calculatorAddAmount">
-        <label for="createAmountInput">
+      <form id="calculatorAddAmount" class="calculator__amountform-flex">
+        <label for="createAmountInput" class="calculator__amount-input">
           <input type="text" name="createAmountInput"
-                 id="createAmountInput" placeholder="Amount">
-          serving(s)
+                 id="createAmountInput" class="calculator_amount-input-field" placeholder="Amount">
         </label>
-        <button type="submit" class="calculator__add-button">add</button>
+        <button type="submit" class="calculator__add-button"><span class="plus-sign">+</span> Add</button>
       </form>
     </div>
     <div>
       <table id="calculatorAddedCalorieData">
-        <thead>
+        <thead class="calculator__amount-results">
         <tr class="calculator-data__heading">
           <th>product</th>
           <th>calories</th>
@@ -80,6 +78,7 @@
         </tr>
         </tbody>
       </table>
+    </div>
     </div>
   </div>
 </main>
