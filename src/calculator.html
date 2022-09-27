@@ -37,24 +37,24 @@
     <div>
 
       <table>
-        <thead>
-        <tr>
+        <thead class="calculator__amount-results">
+        <tr class="calculator-data__heading">
           <th>product</th>
           <th>quantity</th>
           <th>label</th>
         </tr>
         </thead>
         <tbody>
-        <tr id="createProductCalorie">
+        <tr id="createProductCalorie" class="calculator__product-data">
         </tr>
         </tbody>
       </table>
     </div>
     <div>
       <form id="calculatorAddAmount" class="calculator__amountform-flex">
-        <label for="createAmountInput" class="calculator__amount-input">
+        <label for="createAmountInput" class="calculator__amount-input">Amount
           <input type="text" name="createAmountInput"
-                 id="createAmountInput" class="calculator_amount-input-field" placeholder="Amount">
+                 id="createAmountInput" class="calculator_amount-input-field">
         </label>
         <button type="submit" class="calculator__add-button"><span class="plus-sign">+</span> Add</button>
       </form>
@@ -70,11 +70,12 @@
         </tr>
         </thead>
         <tbody>
-        <tr class="calculator-fetched-data">
-          <td>total</td>
+        <tr class="calculator-fetched-data calculator__total-line">
+          <td class="calculator-total">total</td>
           <td id="calculator__total-of-calories"></td>
           <td id="calculator__total-of-fat"></td>
           <td id="calculator__total-of-carbs"></td>
+
         </tr>
         </tbody>
       </table>

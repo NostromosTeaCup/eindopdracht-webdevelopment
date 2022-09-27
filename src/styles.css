@@ -486,6 +486,8 @@ button {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    color: var(--cc-main-color-dark);
 }
 
 .calculator__search-query,
@@ -493,7 +495,6 @@ button {
     width: 200px;
     height: 32px;
     text-align: start;
-    padding-left: 15px;
     font-size: 12px;
     border-radius: 4px;
     color: var(--cc-main-color-dark);
@@ -513,19 +514,21 @@ button {
 }
 
 .calculator__amount-input-field {
-    width: 100px;
+    width: 50px;
     margin-right: 20px;
 
 }
 
 #searchQueryCalculator {
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 #searchQueryCalculator,
 #createAmountInput {
     padding: 4px;
     margin-right: 8px;
+    margin-bottom: 30px;
 }
 
 .plus-sign {
@@ -555,7 +558,6 @@ button {
 .calculator-data__heading th {
     text-align: left;
     width: calc(100% * (1 / 4));
-    border: 1px solid red;
     padding-right: 25px;
 }
 
@@ -563,9 +565,41 @@ button {
     font-size: 12px;
 }
 
+.calculator__product-data td,
+.calculator-fetched-data td {
+    text-align: left;
+    font-size: 14px;
+}
 
+.calculator-data__fat::after,
+.calculator-data__carbs::after {
+    content: " g";
+    display: inline;
+    font-size: 14px;
+}
 
-/* --------------- 4.4 Footer ------------------------- */
+.calculator-data__calories::after {
+    content: " kCal";
+    display: inline;
+    font-size: 14px;
+}
+
+.calculator__total-line td {
+    border-top: 1px solid var(--cc-main-color-dark);
+    padding-top: 10px;
+    border-collapse: collapse;
+}
+
+.calculator-total {
+    text-transform: capitalize;
+}
+
+.calculator_amount-input-field {
+    width: 80px;
+    margin-left: 8px;
+}
+
+    /* --------------- 4.4 Footer ------------------------- */
 .footer__container {
     background-color: var(--cc-main-color-dark);
     width: 100%;

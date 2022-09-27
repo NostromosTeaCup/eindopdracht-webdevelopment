@@ -73,7 +73,7 @@ async function fetchCalculatorData (ingredient) {
 
 
             //aanroepen params van createTotalAmounts
-            createTotalAmounts("calculator-data__calories", "calculator__total-of-calories", "kcal");
+            createTotalAmounts("calculator-data__calories", "calculator__total-of-calories", "kCal");
             createTotalAmounts("calculator-data__fat", "calculator__total-of-fat", "g");
             createTotalAmounts("calculator-data__carbs", "calculator__total-of-carbs", "g");
         })
