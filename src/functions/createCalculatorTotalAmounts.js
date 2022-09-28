@@ -19,7 +19,7 @@ function createTotalAmounts(classNameOfProducts, selectedTableCell, label) {
         (previousValue, currentValue) => previousValue + currentValue, initialValue
     );
 
-    //let variabele voor totalNutrients
+    //let variabele voor totalNutrients omdat het geen constant is en veranderd wordt.
     let totalNutrients = document.getElementById(selectedTableCell);
 
     //innerHTML voor alle nutrienten

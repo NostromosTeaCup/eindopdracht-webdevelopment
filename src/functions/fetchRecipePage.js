@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 }
             });
 
-
+// fetching variables from fetchRecipePageCard.js
             const selectedRecipe = response.data.recipe;
             createRecipeBrowserTab(selectedRecipe);
             createRecipeTitle(selectedRecipe);

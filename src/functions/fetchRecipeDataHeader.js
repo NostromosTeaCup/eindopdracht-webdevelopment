@@ -22,6 +22,7 @@ export default async function fetchFeaturedRecipeData(searchQuery) {
             }
         })
 
+        //response for featured recipes in Header
         const featuredRecipeHits = response.data.hits;
         createFeaturedRecipeCard(featuredRecipeHits.slice(0, 3));
 
