@@ -6,11 +6,11 @@ export default async function fetchFeaturedRecipeData(searchQuery) {
     //if fetching is succesfull
     try {
 
-        //declare input values for API
+        //declare input values for Recipe Search API
         const URI = "https://api.edamam.com";
         const ENDPOINT = "/api/recipes/v2";
-        const API_ID = "f4692aaf";
-        const API_KEY = "36946acd92c05fd67adcdc44b3dfdf0e";
+        const API_ID = "#";
+        const API_KEY = "#";
 
         //fetch data from api
         const response = await axios.get(URI + ENDPOINT, {

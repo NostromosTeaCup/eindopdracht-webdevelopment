@@ -4,11 +4,11 @@ import createTotalAmounts from "./createCalculatorTotalAmounts";
 async function fetchCalculatorData (ingredient) {
     try {
 
-        //declare input values for API
+        //declare input values for Food Database API
         const URI = "https://api.edamam.com";
         const ENDPOINT = "/api/food-database/v2/parser";
-        const API_ID = "0aa47492";
-        const API_KEY = "aa2d4f2d20722dc95735c1f9ffff4073";
+        const API_ID = "#";
+        const API_KEY = "#";
 
         //fetch data from API
         const response = await axios.get(URI + ENDPOINT, {
