@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <title>The Clueless Cook - Calculator</title>
+</head>
+<body class="outer-container__body">
+
+<header class="outer-container">
+
+  <div class="outer-container__navigation">
+    <nav class="navigation__wrapper inner-container">
+      <h2><a href="index.html">The Clueless Cook</a></h2>
+      <ul class="navigation__list">
+        <li><a href="index.html">home</a></li>
+        <li><a href="#footer">about</a></li>
+        <li><a href="calculator.html">calculator</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="outer-container">
+  <section class="inner-container calculator__wrapper">
+    <div class="calculator__inner-container">
+      <h3>Calorie Calculator</h3>
+    <div>
+      <span id="error-message"></span>
+      <form id="calculatorSubmit" class="calculator__searchform-flex">
+        <label for="searchQueryCalculator" class="calculator__search-query">
+          <input type="text" name="searchQueryCalculator" id="searchQueryCalculator" placeholder="Product">
+        </label>
+        <button type="submit" class="calculator__searchbtn">search <span class="arrow-sign">➔</span></button>
+      </form>
+    </div>
+    <div>
+
+      <table>
+        <thead class="calculator__amount-results">
+        <tr class="calculator-data__heading">
+          <th>product</th>
+          <th>quantity</th>
+          <th>label</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="createProductCalorie" class="calculator__product-data">
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <form id="calculatorAddAmount" class="calculator__amountform-flex">
+        <label for="createAmountInput" class="calculator__amount-input">Amount
+          <input type="text" name="createAmountInput"
+                 id="createAmountInput" class="calculator_amount-input-field">
+        </label>
+        <button type="submit" class="calculator__add-button"><span class="plus-sign">+</span> Add</button>
+      </form>
+    </div>
+    <div>
+      <table id="calculatorAddedCalorieData">
+        <thead class="calculator__amount-results">
+        <tr class="calculator-data__heading">
+          <th>product</th>
+          <th>calories</th>
+          <th>fat</th>
+          <th>carbs</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="calculator-fetched-data calculator__total-line">
+          <td class="calculator-total">total</td>
+          <td id="calculator__total-of-calories"></td>
+          <td id="calculator__total-of-fat"></td>
+          <td id="calculator__total-of-carbs"></td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="outer-container" id="footer">
+
+    <div class="footer__container inner-container">
+      <ul class="footer__list">
+        <li>
+          <h5>information</h5>
+          <p>Nullam a enim</p>
+          <p>Quisque cursus</p>
+          <p>Cras egestas</p>
+          <p>Nunc vitae</p>
+        </li>
+        <li id="about-footer">
+          <h5>about</h5>
+          <p>Nullam a enim</p>
+          <p>Quisque cursus</p>
+          <p>Cras egestas</p>
+          <p>Nunc vitae</p>
+        </li>
+        <li>
+          <h5>contact</h5>
+          <p>Nullam a enim</p>
+          <p>Quisque cursus</p>
+          <p>Cras egestas</p>
+          <p>Nunc vitae</p>
+        </li>
+
+        <li>
+          <h5>Social</h5>
+          <div class="footer__social-card">
+            <a href="#"><img class="social__icons" src="assets/icons/facebook.png" alt="facebook icon">
+            </a>
+            <a href="#"><img class="social__icons" src="assets/icons/instagram.png" alt="instagram icon">
+            </a>
+            <a href="#"><img class="social__icons" src="assets/icons/linkedin.png" alt="linkedin icon">
+            </a>
+            <a href="#"><img class="social__icons" src="assets/icons/twitter.png" alt="twitter icon">
+            </a>
+
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+
+<script src="calculator.js" type="module"></script>
+</body>
+</html>
