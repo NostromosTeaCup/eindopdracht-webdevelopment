@@ -1,7 +1,7 @@
 # The Clueless Cook
 ***
 Do you never know what to cook when you come home from a day of work?  <br/>
-Do you want to know the nutrietional values of your favorite recipe? <br/>
+Do you want to know the nutritional values of your favorite recipe? <br/>
 Do you want to know how many calories that product has in your hands when you're in the grocery store?<br/>
 Look no further, **The Clueless Cook** will give you all the answers! 
 
