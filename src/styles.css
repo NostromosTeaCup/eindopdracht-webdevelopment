@@ -2,12 +2,15 @@
     1. Global Styles
     2. Typography
     3. Layout
-        3.1 Reusables
+        3.1 Re-usables
+        3.2 Other
     4. Areas
         4.1 Navigation
         4.2 Header
+            4.2.a Header Featured Recipes
         4.3 Main
             4.3.1 Main - Home Page
+                4.3.1.a Recipe Cards
             4.3.2 Main - Recipe Page
             4.3.3 Main - Calculator Page
         4.4 Footer
@@ -25,7 +28,7 @@
 }
 
 body {
-    background-color: #EEEEEE;
+    background-color: var(--cc-main-bg-color-dark);
     color: var(--cc-main-color-dark);
 }
 
@@ -36,6 +39,7 @@ body {
     --cc-font-color: #3E3E3E;
     --main-margin-left-right: 0px;
     --inner-container-width: 1000px;
+    --cc-white-bg: #FFFFFF;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -83,10 +87,11 @@ a {
 }
 
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+/* --------------------------- 3. Layout --------------------------- */
+/* ---------------- 3.1 Re-usables ---------------- */
 
 .outer-container__body {
-    background-color: #ffffff;
+    background-color: var(--cc-white-bg);
 }
 
 .outer-container,
@@ -98,6 +103,7 @@ a {
     align-items: center;
     width: 100%;
     flex-shrink: 1;
+    flex-grow: 0;
 }
 
 .inner-container {
@@ -107,10 +113,11 @@ a {
     align-items: center;
     width: var(--inner-container-width);
     flex-shrink: 1;
+    flex-grow: 0;
 }
 
 
-/* ------------------------------- 3.1 Reusables ------------------------------------- */
+/* ---------------- 3.2 Other ---------------- */
 
 button {
     text-transform: capitalize;
@@ -146,10 +153,13 @@ button {
     font-weight: 400;
 }
 
+.time-icon {
+    padding-right: 10px;
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+/* ------------------------------- 4. Areas --------------------------- */
 
-/*---------------- 4.1 Navigation --------------------- */
+/* ---------------- 4.1 Navigation ---------------- */
 .outer-container__navigation {
     background-color: var(--cc-main-bg-color-dark);
 }
@@ -190,12 +200,8 @@ button {
     text-transform: capitalize;
 }
 
-.time-icon {
-    padding-right: 10px;
-}
 
-
-/* --------------- 4.2 Header ------------------------- */
+/* ---------------- 4.2 Header ---------------- */
 
 .outer-container__header {
     background-image: url("./assets/images/hero-image.jpg");
@@ -220,6 +226,8 @@ button {
 .header__text {
     margin-left: var(--main-margin-left-right);
 }
+
+/* ----- 4.2.a Header Featured Recipes ----- */
 
 .header__featured-recipes-wrapper {
     width: var(--inner-container-width);
@@ -283,7 +291,7 @@ button {
 }
 
 
-/* --------------- 4.3 Main --------------------------- */
+/* --------------------------- 4.3 Main --------------------------- */
 
 
 /* --------------- 4.3.1 Main - Home Page -------------- */
@@ -321,6 +329,8 @@ button {
     width: 200px;
 }
 
+/* ----- 4.3.1.a Recipe Cards ----- */
+
 #recipeCardsList {
     width: 100%;
     column-count: 3;
@@ -328,6 +338,7 @@ button {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
 
 .recipe-image {
     border-radius: 4px;
@@ -390,10 +401,10 @@ button {
 /* --------------- 4.3.2 Main - Recipe Page ---------------------- */
 
 .recipe-page__wrapper {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     flex-wrap: wrap;
     margin: 80px 0;
 }
@@ -427,11 +438,11 @@ button {
 }
 
 .recipe-page__image {
-    align-self: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    align-self: flex-end;
     padding-top: 35px;
     border-radius: 4px;
 }
@@ -472,10 +483,10 @@ button {
 }
 
 .text-container-end {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     font-size: 14px;
 }
 
@@ -483,7 +494,7 @@ button {
     width: 350px;
 }
 
-/*---------------- 4.2.3 Main - Calculator Page ------- */
+/* ---------------- 4.2.3 Main - Calculator Page ---------------- */
 
 .calculator__wrapper {
     display: flex;
@@ -612,7 +623,7 @@ button {
     margin-left: 8px;
 }
 
-    /* --------------- 4.4 Footer ------------------------- */
+/* --------------------------- 4.4 Footer --------------------------- */
 
 .footer__container {
     background-color: var(--cc-main-color-dark);
@@ -621,12 +632,12 @@ button {
 }
 
 .footer__list {
-    color: var(--cc-contrast);
-    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    color: var(--cc-contrast);
+    font-size: 12px;
     width: var(--inner-container-width);
     list-style-type: none;
 }
