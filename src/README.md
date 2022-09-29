@@ -123,15 +123,18 @@ For the **Recipe Search API** you will need to place your ID (8 characters long)
       * line 11 `API_KEY` replace "#" with your KEY
 <br/>
 ---
+
 ### 5. <a name="section-5">Bonus</a>
 Do you want to change the featured recipes to something else? 
 1. go to the main.js file
 2. find line 30
 3. replace `chinese` with a different search word. You can als use ingredients instead of cuisine for ex. `potato`.
 ---
+
 ### 6. <a name="section-6">Need Help?</a>
 If you run in to any issues, or have questions, please [contact me](https://github.com/NostromosTeaCup). I'm happy to help you out! 
 ---
+
 ### 7. <a name="section-7">Credits</a>
 
 This application is build as an exam assignment for [Hogeschool Novi](https://github.com/hogeschoolnovi/) bootcamp for Webdevelopment.<br/>
