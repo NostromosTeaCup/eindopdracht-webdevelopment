@@ -116,11 +116,11 @@ For the **Recipe Search API** you will need to place your ID (8 characters long)
 * fetchRecipePage.js at;
   * line 25 `API_ID` replace "#" with your ID
   * line 26 `API_KEY` replace "#" with your KEY
-<br/>
-  * For the **Food Database API** you will need to place your ID and KEY in the following javascript file;<br/>
-    * fetchCalculatorData.js at;
-      * line 10 `API_ID` replace "#" with your ID
-      * line 11 `API_KEY` replace "#" with your KEY
+  <br/><br/>
+* For the **Food Database API** you will need to place your ID and KEY in the following javascript file;<br/>
+   * fetchCalculatorData.js at;
+     * line 10 `API_ID` replace "#" with your ID
+     * line 11 `API_KEY` replace "#" with your KEY
 <br/>
 ---
 
