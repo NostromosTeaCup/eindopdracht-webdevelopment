@@ -8,15 +8,16 @@ Look no further, **The Clueless Cook** will give you all the answers!
 ## Table of Contents
 
 ---
-1. What does the application do?
-2. Preview of the project's homepage
+1. [What does the application do?](#section-1)
+2. [Preview of the project's homepage](#section-2)
 3. Edamam walkthrough
 4. How to install the application
 5. Bonus
-6. Credits
+6. Need help?
+7. Credits
 ---
 
-### 1. What does the application do?
+### 1. <a name="section-1">What does the application do?</a>
 _The application has three pages with their own respective function._
 
 * **Homepage**
@@ -41,7 +42,7 @@ _The application has three pages with their own respective function._
   * Add the amount of servings to the selected product
   * When added amount is send it will give you a table with the added amount of products, with information on carbs, fat and calories.
 ---
-### 2. Preview of the project's homepage
+### 2. <a name="section-2">Preview of the project's homepage</a>
 ![Preview of homepage](assets/images/homepage-example.png)
 ---
 ### 3. Edamam walkthrough
@@ -118,8 +119,17 @@ For the **Recipe Search API** you will need to place your ID (8 characters long)
       * line 11 `API_KEY` replace "#" with your KEY
 <br/>
 
-##### 5. bonus
-want to change the featured recipes to something else? 
+##### 5. Bonus
+Do you want to change the featured recipes to something else? 
 1. go to the main.js file
 2. find line 30
 3. replace `chinese` with a different search word. You can als use ingredients instead of cuisine for ex. `potato`.
+
+#### 6. Need Help?
+If you run in to any issues, or have questions, please contact me. I'm happy to help you out! 
+
+#### 7. Credits
+
+This application is build as an exam assignment for [Hogeschool Novi](https://github.com/hogeschoolnovi/) bootcamp for Webdevelopment.<br/>
+The original design is made by [Elwyn de Neve](https://github.com/elwyn-de-neve/).<br/>
+The HTML, CSS and JS is completed by myself.
