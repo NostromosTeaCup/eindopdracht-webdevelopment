@@ -80,7 +80,13 @@ async function fetchCalculatorData (ingredient) {
 
         //error message voor in UI
     } catch (e) {
-        console.error(e);
+        const error = document.getElementById("error-message")
+
+        if (e.response.status === 404) {
+            error.innerContent = 'page not found';
+        } else if (e.response.status === 500) {
+            error.innerContent = 'internal server error';
+        }
     }
 }
 

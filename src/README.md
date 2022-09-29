@@ -122,6 +122,7 @@ For the **Recipe Search API** you will need to place your ID (8 characters long)
      * line 10 `API_ID` replace "#" with your ID
      * line 11 `API_KEY` replace "#" with your KEY
 <br/>
+     
 ---
 
 ### 5. <a name="section-5">Bonus</a>
