@@ -24,6 +24,7 @@ _The application has three pages with their own respective function._
 
 * **Homepage**
   * The homepage has a search function for finding recipes. The search function has multiple search options such as;<br/>
+    * a searchbar for keyword search,
     * mealtype, 
     * cuisine, 
     * diet
