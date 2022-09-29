@@ -133,6 +133,7 @@ Do you want to change the featured recipes to something else?
 
 ### 6. <a name="section-6">Need Help?</a>
 If you run in to any issues, or have questions, please [contact me](https://github.com/NostromosTeaCup). I'm happy to help you out! 
+
 ---
 
 ### 7. <a name="section-7">Credits</a>
