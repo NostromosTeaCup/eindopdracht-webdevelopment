@@ -63,8 +63,12 @@ h3 {
 }
 
 h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
+}
+
+h4:first-letter {
+    text-transform: capitalize;
 }
 
 h5 {
